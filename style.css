@@ -1,0 +1,205 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GLOBAIS E ACESSIBILIDADE
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Suporte para rolagem suave ao clicar nos links do menu */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Tipografia clara, sem serifas e com alto contraste */
+    font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+    
+    /* Tamanho de fonte ampliado para facilitar a leitura */
+    font-size: 22px;
+    line-height: 1.6;
+    
+    /* Cores de alto contraste (texto escuro em fundo claro) */
+    color: #1a1a1a;
+    background-color: #f4f6f9;
+}
+
+/* Indicador visual de foco forte para navegação por teclado (Acessibilidade WCAG) */
+:focus-visible {
+    outline: 4px solid #ffab00;
+    outline-offset: 3px;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER)
+   ========================================================================== */
+
+header {
+    background-color: #003366; /* Azul escuro com alto contraste para texto branco */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #002244;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #e6f0fa;
+}
+
+/* ==========================================================================
+   NAVEGAÇÃO (NAV)
+   ========================================================================== */
+
+nav {
+    background-color: #002244;
+    padding: 15px 10px;
+    text-align: center;
+    position: sticky; /* Mantém o menu visível no topo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin: 5px 10px;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Estado visual ao passar o mouse ou focar no link */
+nav a:hover,
+nav a:focus {
+    background-color: #ffab00;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN) E CARTÕES
+   ========================================================================== */
+
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cartões com bordas destacadas e espaçamento amplo */
+.card-dica {
+    background-color: #ffffff;
+    border: 3px solid #003366;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-dica h2 {
+    color: #003366;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.card-dica p {
+    margin-bottom: 18px;
+}
+
+/* Listas com marcador e espaçamento interno amigável */
+.card-dica ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.card-dica li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.card-dica strong {
+    color: #002244;
+}
+
+.card-dica em {
+    background-color: #eef4fc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   CAIXA DE ALERTA E DESTAQUES
+   ========================================================================== */
+
+.alerta {
+    background-color: #fff8e1;
+    border: 2px solid #ffb300;
+    border-left: 10px solid #d97706;
+    padding: 22px;
+    margin-top: 25px;
+    border-radius: 6px;
+    color: #4a2c00;
+}
+
+.alerta strong {
+    color: #b45309;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 1rem;
+    border-top: 4px solid #003366;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (DISPOSITIVOS MÓVEIS / TABLETS)
+   ========================================================================== */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 20px; /* Leve reajuste no celular mantendo boa leitura */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .card-dica {
+        padding: 20px;
+    }
+}

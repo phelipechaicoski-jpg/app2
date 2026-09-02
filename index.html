@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectado & Seguro - Guia de Segurança Digital</title>
+    <style>
+        /* Configurações Globais de Acessibilidade */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px; /* Fonte maior para facilitar a leitura */
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f4f6f9;
+        }
+
+        /* Foco Visível para Navegação por Teclado */
+        a:focus, button:focus {
+            outline: 4px solid #ffbf47;
+            outline-offset: 2px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #004080; /* Alto contraste com texto branco */
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #002b55;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Cartões de Dicas */
+        .card-dica {
+            background-color: #ffffff;
+            border: 3px solid #004080;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .card-dica h2 {
+            color: #004080;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .card-dica ul {
+            margin-left: 25px;
+        }
+
+        .card-dica li {
+            margin-bottom: 10px;
+        }
+
+        /* Caixa de Alerta */
+        .alerta {
+            background-color: #fff3cd;
+            border-left: 10px solid #856404;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        .alerta strong {
+            color: #856404;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conectado & Seguro</h1>
+        <p>Seu guia simples para navegar na internet com tranquilidade.</p>
+    </header>
+
+    <nav aria-label="Navegação Principal">
+        <a href="#senhas">Senhas Seguras</a>
+        <a href="#golpes">Evitando Golpes</a>
+        <a href="#whatsapp">Segurança no WhatsApp</a>
+    </nav>
+
+    <main>
+
+        <section id="senhas" class="card-dica">
+            <h2>1. Como Criar Senhas Seguras</h2>
+            <p>Sua senha é a chave da sua casa digital. Siga estas orientações simples:</p>
+            <ul>
+                <li><strong>Misture letras e números:</strong> Use palavras fáceis de lembrar para você, mas adicione números e símbolos (exemplo: <em>CafeComLeite@2026</em>).</li>
+                <li><strong>Não use datas de aniversário:</strong> Evite usar sua data de nascimento ou o nome de netos e filhos.</li>
+                <li><strong>Anote em um caderno:</strong> Se for difícil lembrar, anote suas senhas em um caderno físico mantido em local seguro na sua casa. Não salve no celular.</li>
+            </ul>
+        </section>
+
+        <section id="golpes" class="card-dica">
+            <h2>2. Cuidado com Mensagens Falsas</h2>
+            <p>Golpistas tentam se passar por bancos ou empresas conhecidas para pedir dados.</p>
+            <ul>
+                <li><strong>Bancos não pedem senha por mensagem:</strong> Nenhum banco vai ligar ou mandar mensagem pedindo sua senha ou código do celular.</li>
+                <li><strong>Desconfie de links recebidos:</strong> Não clique em links enviando prêmios, promoções exageradas ou avisos de bloqueio de conta.</li>
+            </ul>
+            
+            <div class="alerta" role="region" aria-label="Aviso importante">
+                <strong>Regra de Ouro:</strong> Na dúvida, pare! Não clique em nada e peça ajuda a um familiar de confiança ou vá presencialmente ao seu banco.
+            </div>
+        </section>
+
+        <section id="whatsapp" class="card-dica">
+            <h2>3. Protegendo seu WhatsApp</h2>
+            <p>O WhatsApp é muito usado para conversas do dia a dia, por isso exige atenção dobrada:</p>
+            <ul>
+                <li><strong>Código de confirmação:</strong> Se chegar um código por SMS no seu celular, nunca passe esse número para ninguém.</li>
+                <li><strong>Pedidos de dinheiro:</strong> Se um amigo ou familiar pedir dinheiro urgente pelo aplicativo, ligue para ele antes de fazer qualquer transferência para confirmar se é ele mesmo.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Este site foi feito com foco em acessibilidade e leitura fácil para a melhor idade.</p>
+    </footer>
+
+</body>
+</html>
